@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:src="@drawable/back"
+        android:onClick="Back1"
+        tools:ignore="OnClick" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ตารางแสดงประวัติการซื้อขาย"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_height="25dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:elevation="1dp"
+            android:padding="2dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_table1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="รหัสสินค้า"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="2dp"
+            android:elevation="2dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_table2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="จำนวน"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:elevation="3dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_table3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="ID ผู้ซื้อ"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:elevation="4dp"
+            android:padding="2dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_table4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="ราคารวม"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:elevation="5dp"
+            android:padding="2dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_table5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="เวลา"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp" />
+    <Button
+        android:layout_width="150dp"
+        android:id="@+id/btn1"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+</LinearLayout>
